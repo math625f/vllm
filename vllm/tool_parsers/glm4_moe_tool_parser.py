@@ -124,7 +124,7 @@ class Glm4MoeModelToolParser(ToolParser):
     def _is_string_type(
         tool_name: str,
         arg_name: str,
-        tools: list[ChatCompletionToolsParam | FunctionTool] | None,
+        tools: list[Tool] | None,
     ) -> bool:
         if tools is None:
             return False
